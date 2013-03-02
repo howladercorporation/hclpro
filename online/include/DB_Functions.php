@@ -110,6 +110,32 @@ class DB_Functions{
         }
     }
     
+    
+    public function addNewProject($title, $description){
+        if($title==""){
+            $response["error"] = 1;
+            $response["error_msg"] = "Please fill all information.";
+            return $response;
+        }
+        
+        $userid = $_SESSION['userid'];
+        $date = date("YmdHis");
+        
+        $query = "INSERT INTO `projects`(`title`,`description`, `userid`, `setdate`) VALUES ('$title','$description','$userid','$date')";
+        
+     
+        $result = mysql_query($query);
+        if($result){            
+            $response["error"] = 0;
+            $response["success"] = 1;
+            $response["msg"] = "The Project has been created successfully!";
+            return $response;
+        }else{
+            $response["error"] = 1;
+            $response["error_msg"] = "Oops... Something is wrong!";
+            return $response;
+        }
+    }
     public function sendEmilForAccountActivation($id,$username,$pass,$email){
         
         $to  = $email;

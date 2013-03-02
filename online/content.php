@@ -5,7 +5,10 @@
            break;
        case 'newuser':
            include('contents/addnewuser.php');
-           break;
+           break;       
+       case 'newproject':
+           include('contents/newproject.php');
+           break;       
        case 'showallusers':
            include('contents/showalluser.php');
            break;

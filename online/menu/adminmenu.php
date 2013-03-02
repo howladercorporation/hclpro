@@ -15,7 +15,14 @@
 			<li class="icn_add_user"><a href="?page=newuser">Add New User</a></li>
 			<li class="icn_view_users"><a href="?page=showallusers">View Users</a></li>
 			<li class="icn_profile"><a href="#">Your Profile</a></li>
-		</ul>		
+		</ul>	
+                
+                <h3>Projects</h3>
+		<ul class="toggle">
+			<li class="icn_add_project"><a href="?page=newproject">Add New Project</a></li>
+			<li class="icn_add_project"><a href="#">View Projects</a></li>			
+		</ul>
+                
 		<h3>Admin</h3>
 		<ul class="toggle">
 			<li class="icn_settings"><a href="#">Options</a></li>
