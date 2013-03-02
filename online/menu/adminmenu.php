@@ -5,10 +5,12 @@
 		<hr/>
 		<h3>Content</h3>
 		<ul class="toggle">
+			<li class="icn_new_article"><a href="?page=viewproject">View Project</a></li>
 			<li class="icn_new_article"><a href="#">New Task</a></li>
 			<li class="icn_edit_article"><a href="#">Edit Task</a></li>
 			<li class="icn_categories"><a href="#">Running Tasks</a></li>
 			<li class="icn_tags"><a href="#">Completed Tasks</a></li>
+			
 		</ul>
 		<h3>Users</h3>
 		<ul class="toggle">

@@ -59,23 +59,47 @@ if (isset($_POST['posted'])) {
             <header><h3>New User</h3></header>
             <div class="module_content">
                 <fieldset style="width:48%; float: left;">
-                    <label>First Name</label>
-                    <input type="text" name="fname" required style="width:92%;" value="<?php echo $fname; ?>">
+                    <label>ID</label>
+                    <input type="text" name="fname" required style="width:92%;" value="<?php echo $id; ?>">
                 </fieldset>
                 <fieldset style="width:48%; float: right;">
-                    <label>Last Name</label>
-                    <input type="text" name="lname" required style="width:92%;" value="<?php echo $lname; ?>" >
+                    <label>Project Id</label>
+                    <input type="text" name="lname" required style="width:92%;" value="<?php echo $projectid; ?>" >
                 </fieldset>
                 <fieldset style="width:48%; float: left;">
-                    <label>Username</label>
-                    <input type="text" name="username" required style="width:92%;" value="<?php echo $username; ?>">
+                    <label>Task Title</label>
+                    <input type="text" name="username" required style="width:92%;" value="<?php echo $tasktitle; ?>">
                 </fieldset>
                 <fieldset style="width:48%; float: right;">
-                    <label>Email</label>
-                    <input type="email" name="email" required style="width:92%;" value="<?php echo $email; ?>">
+                    <label>Desc File</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
+                </fieldset>
+				<fieldset style="width:48%; float: right;">
+                    <label>Estimate Duration</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
+                </fieldset>
+				<fieldset style="width:48%; float: right;">
+                    <label>Desc File</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
+                </fieldset>
+				<fieldset style="width:48%; float: right;">
+                    <label>Desc File</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
+                </fieldset>
+				<fieldset style="width:48%; float: right;">
+                    <label>Desc File</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
+                </fieldset>
+				<fieldset style="width:48%; float: right;">
+                    <label>Desc File</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
+                </fieldset>
+				<fieldset style="width:48%; float: right;">
+                    <label>Desc File</label>
+                    <input type="email" name="email" required style="width:92%;" value="<?php echo $descfile; ?>">
                 </fieldset>
                 <fieldset style="width:48%; float: left;">
-                    <label>Password</label>
+                    <label></label>
                     <input type="password" name="pass" required style="width:92%;" onchange="form.conpass.pattern = this.value;">
                 </fieldset>
                 <fieldset style="width:48%; float: right;">
