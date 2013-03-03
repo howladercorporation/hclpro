@@ -12,8 +12,10 @@
        case 'edituser':
            include('contents/edituser.php');
            break;
+       case 'newtask':
+           include ('contents/newtask.php');
+           break;
        default :
            include('contents/temp.php');
-       
     }
 ?>

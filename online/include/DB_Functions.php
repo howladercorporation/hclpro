@@ -110,6 +110,28 @@ class DB_Functions{
         }
     }
     
+    public function addNewTask($projectid,$title,$desc,$esttime){
+        if($projectid=="" || $title=="" || $desc=="" || $esttime=="" ){
+            $response["error"] = 1;
+            $response["error_msg"] = "Please fill all information.";
+            return $response;
+        }
+        
+        $query = "INSERT INTO newtasks(project_id, task_title,  desc_file, estimate_duration) VALUES ('$projectid','$title','$desc','$esttime')";
+        
+        $result = mysql_query($query);
+        if($result){
+            $response["error"] = 0;
+            $response["success"] = 1;
+            $response["msg"] = "New Task Created successfully!";
+            return $response;
+        }else{
+            $response["error"] = 1;
+            $response["error_msg"] = "Oops... Something is wrong!";
+            return $response;
+        }
+    }
+    
     public function sendEmilForAccountActivation($id,$username,$pass,$email){
         
         $to  = $email;
@@ -320,6 +342,14 @@ class DB_Functions{
         return $mail;
     }   
     
+    /*  This function will be
+     *  used to get all project name and id  */
+    
+    public function getProjectInformation(){
+        $query = "select * from projects";
+        $result = mysql_query($query);
+        return $result;
+    }
 }
 ?>
 

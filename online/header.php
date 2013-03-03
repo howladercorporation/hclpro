@@ -12,6 +12,10 @@ switch ($page) {
         $head1 = "Users";
         $head2 = "All Users";
         break;
+    case 'newtask':
+        $head1 = "Users";
+        $head2 = "All Users";
+        break;
     case 'edituser':
         $head1 = '<a href="?page=showallusers">Users</a>';
         $head2 = "Edit User";
