@@ -30,5 +30,4 @@
         <p><strong>Copyright &copy; 2013 HCL PRO</strong></p>
         <p><a href="http://www.howladergroup.com/corporation">Howlader Corporation Ltd</a></p>
     </footer>
-
 </aside><!-- end of sidebar -->

@@ -25,4 +25,5 @@ switch ($page) {
     default :
         include('contents/temp.php');
 }
+
 ?>
