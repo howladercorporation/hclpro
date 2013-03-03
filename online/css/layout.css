@@ -313,6 +313,9 @@ background: url(../images/icn_add_user.png) no-repeat center left;
 #sidebar li.icn_view_users a {
 background: url(../images/icn_view_users.png) no-repeat center left;
 }
+#sidebar li.icn_add_project a {
+background: url(../images/icn_add_project.png) no-repeat center left;
+}
 #sidebar li.icn_profile a {
 background: url(../images/icn_profile.png) no-repeat center left;
 }
@@ -727,7 +730,7 @@ margin: -5px 0 5px 0;
 text-transform: uppercase;
 }
 
-fieldset input[type=text],[type=email],[type=password] {
+fieldset input[type=text],[type=email],[type=password],[type=number],[type=file]{
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;

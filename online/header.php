@@ -8,7 +8,17 @@ switch ($page) {
         $head1 = "Users";
         $head2 = "New User";
         break;
+    
+    case 'newproject':
+        $head1 = "Projects";
+        $head2 = "New Project";
+        break;
+    
     case 'showallusers':
+        $head1 = "Users";
+        $head2 = "All Users";
+        break;
+    case 'newtask':
         $head1 = "Users";
         $head2 = "All Users";
         break;

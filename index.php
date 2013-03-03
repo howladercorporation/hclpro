@@ -3,7 +3,6 @@
     if(isset($_SESSION['userid'])){
         header('Location: online/'); 
     }
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
