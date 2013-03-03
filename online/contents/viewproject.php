@@ -1,6 +1,6 @@
 <?php
     $targetpage = ""; 	
-    $limit = 5;	
+    $limit = 1;	
                                 
     $total_pages = $db->totalRowInUsers();
     //$total_pages = 0;
@@ -14,8 +14,12 @@
     }	
 	
     // Get page data
-    $result = $db->getUsersInfoWithStartAndLimit($start,$limit);
+    $result = $db->getProjectsInfoWithStartAndLimit($start,$limit);
+	//echo "I am here.";
     //print_r($result);
+	//while ($project = mysql_fetch_array($result)){
+		//echo $project['project_title'];
+	//}
 	
     // Initial page num setup
     if ($page == 0){$page = 1;}
@@ -33,37 +37,32 @@
                     <table class="tablesorter" cellspacing="0" style="width: 100% !important;"> 
 			<thead> 
                   <tr>    				
-    				<th>Username</th> 
-    				<th>First Name</th> 
-    				<th>Last Name</th> 
-                    <th>Email</th>
-                    <th>User Type</th>
-                    <th>Active</th>
-    				<th>Actions</th> 
+    				<th>ID</th> 
+    				<th>Project Title</th> 
+    				<th>Project Description </th> 
+                    <th>User ID</th>
+                    <th>Set Date </th>
                   </tr> 
 			</thead> 
 			<tbody> 
                   <?php
 				  	while($row = mysql_fetch_row($result))
   					{
-						$username = $row[1];
-						$fname = $row[4];
-						$lname = $row[5];
-						$email = $row[6];
-						$usertype = $row[7];
-						$active = $row[8];
+						$id = $row[0];
+						$title = $row[1];
+						$description = $row[2];
+						$userid = $row[3];
+						$setdate = $row[4];
+						
 				  ?>      
                   <tr>    					
-    				<td><?php echo $username; ?>  </td> 
-    				<td><?php echo $fname; ?></td> 
-    				<td><?php echo $lname; ?></td> 
-                    <td><?php echo $email; ?></td> 
-                    <td><?php 		
-							echo $usertype=='1'?"Admin":"User";
-						?></td> 
-                    <td><?php echo $active=='Y'?"Yes":"No"; ?></td> 
+    				<td><?php echo $id; ?>  </td> 
+    				<td><?php echo $title; ?></td> 
+    				<td><?php echo $description; ?></td> 
+                    <td><?php echo $userid; ?></td> 
+                    <td><?php echo $setdate; ?>></td> 
                     
-    				<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+    				
                   </tr> 
                   <?php
 				  	}

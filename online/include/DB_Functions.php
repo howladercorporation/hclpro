@@ -222,22 +222,21 @@ class DB_Functions{
         $total_pages = $total_pages['num'];
         return $total_pages;
     }
-    
+	
+     public function getProjectsInfoWithStartAndLimit($start,$limit){
+        $query = "SELECT * FROM projects LIMIT $start, $limit";
+        $result = mysql_query($query);
+        return $result;
+    }
+	
+	
     public function getUsersInfoWithStartAndLimit($start,$limit){
         $query = "SELECT * FROM users LIMIT $start, $limit";
         $result = mysql_query($query);
-        //$result = mysql_fetch_row($result);
+        //$result = mysql_fetch_array($result);
         return $result;
     }
     
-    public function getUserInfoByUserId($userid){
-        $query = "SELECT * from users WHERE id='$userid'";
-        $result = mysql_query($query);
-        $result = mysql_fetch_array($result);
-        return $result;
-    }
-
-
     /**
      * Check user email is existed or not
      */
@@ -315,7 +314,7 @@ class DB_Functions{
             if($isActiveUserFound){
                 $mail = $this->sendEmailToTheUser($email);
                 if($mail)
-                    return 3;
+                	return 3;
                 return 2;
             }
             //If the email found but the user is not activated

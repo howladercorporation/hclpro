@@ -5,15 +5,17 @@
 		<hr/>
 		<h3>Content</h3>
 		<ul class="toggle">
+			<li class="icn_new_article"><a href="viewproject.php">View Project</a></li>
 			<li class="icn_edit_article"><a href="#">Edit Task</a></li>
 			<li class="icn_categories"><a href="#">Running Tasks</a></li>
 			<li class="icn_tags"><a href="#">Completed Tasks</a></li>
-                        <li class="icn_new_article"><a href="#">New Task</a></li>
+            <li class="icn_new_article"><a href="#">New Task</a></li>
+			
 		</ul>
 		<h3>User</h3>
 		<ul class="toggle">
 			<li class="icn_add_user"><a href="#">Your Profile</a></li>					
-                        <li class="icn_security"><a href="#">Change Password</a></li>
+            <li class="icn_security"><a href="#">Change Password</a></li>
 			<li class="icn_jump_back"><a href="logout.php">Logout</a></li>
 		</ul>	
 		
