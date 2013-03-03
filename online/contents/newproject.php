@@ -54,7 +54,7 @@ if (isset($_POST['posted'])) {
                 
                 <fieldset style="width:70%; float: left;">
                     <label>Description</label>
-                    <textarea rows="4" cols="50" name="description" required style="width:92%;" value="<?php echo $description; ?>">
+                    <textarea rows="4" cols="50" name="description" style="width:92%;" value="<?php echo $description; ?>">
                     </textarea> 
                 </fieldset>
                 
